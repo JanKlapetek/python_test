@@ -26,7 +26,7 @@ def deleni(cislo1, cislo2):
 
 
 
-uzivatel(jmeno=input('Zadejte jméno: '), prijmeni=input('Zadejte příjmení: '))
+uzivatel(jmeno = input('Zadejte jméno: '), prijmeni = input('Zadejte příjmení: '))
 print('')
 menu()
 volba = int(input('Vyber číslo z menu: '))
@@ -45,6 +45,8 @@ elif volba == 4:
 
 else:
     print('špatně zadáno:')
+
+print()
 
 
 
