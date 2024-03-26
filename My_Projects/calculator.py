@@ -6,6 +6,7 @@ def menu():
     print('3. odčítání')
     print('4. dělení')
     print('5. adssasdasd')
+    print('6. saad')
 
 def scitani(cislo1, cislo2):
         soucet = cislo1 + cislo2
