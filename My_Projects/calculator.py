@@ -46,7 +46,7 @@ elif volba == 4:
 else:
     print('špatně zadáno:')
 
-print()
+print('blabla')
 
 
 
