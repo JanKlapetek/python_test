@@ -1,11 +1,16 @@
-# veta = 'Na železnici za Čelákovicemi ve směru na Prahu došlo k poruše trakčního vedení, potvrdil pro CNN Prima NEWS tiskový mluvčí Českých drah Filip Medelský. Incident je vyšetřován jako mimořádná událost.'
-# #1
-# mySet = set()
-# for _ in veta:
-#   mySet.add(_)
-# print(mySet)
-# #mySet = set(veta)
-# #2
-# for _ in mySet:
-#   print(_  + " " + str(veta.count(_)))
-print('Hello world')
+uzivatele = {
+    'alice': 'heslo123',
+    'bob': 'tajneHeslo456',
+    'charlie': 'superTajneHeslo789'
+}
+
+def prihlaseni():
+    uziv_jmeno = input("Zadej uživatelské jméno: ")
+    heslo = input("Zadej heslo: ")
+
+    if uziv_jmeno in uzivatele and uzivatele[uziv_jmeno] == heslo:
+        print(f"Vítej, {uziv_jmeno}! Jsi úspěšně přihlášen.")
+    else:
+        print("Chybné uživatelské jméno nebo heslo.")
+
+prihlaseni()
