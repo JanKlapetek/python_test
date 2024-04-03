@@ -1,7 +1,8 @@
 uzivatele = {
     'alice': 'heslo123',
     'bob': 'tajneHeslo456',
-    'charlie': 'superTajneHeslo789'
+    'charlie': 'superTajneHeslo789',
+    'jan' : 'heslo'
 }
 
 def prihlaseni():
