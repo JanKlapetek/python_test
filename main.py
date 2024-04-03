@@ -14,3 +14,4 @@ def prihlaseni():
         print("Chybné uživatelské jméno nebo heslo.")
 
 prihlaseni()
+print('Hello world')
