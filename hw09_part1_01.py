@@ -10,3 +10,17 @@ class car:
         self.barva = barva
         self.cena = cena
 
+# Zobrazim info o autě.
+    def info(self):
+        print(f'Model: {self.model}')
+        print(f'Rok: {self.rok}')
+        print(f'Výrobce: {self.vyrobce}')
+        print(f'Objem: {self.objem}')
+        print(f'Barva: {self.barva}')
+        print(f'Cena: {self.cena}')
+
+moje_auto = car(model='Octavia 2 RS', rok='2013', vyrobce='Škoda', objem=2, barva='Bílá', cena=190000)
+vysledek = print(moje_auto)
+
+
+
