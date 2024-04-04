@@ -20,7 +20,7 @@ class car:
         print(f'Cena: {self.cena}')
 
 moje_auto = car(model='Octavia 2 RS', rok='2013', vyrobce='Škoda', objem=2, barva='Bílá', cena=190000)
-vysledek = print(moje_auto)
+moje_auto.info()
 
 
 
