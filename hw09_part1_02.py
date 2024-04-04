@@ -2,6 +2,7 @@
 # Implementujte třídu Kniha. V polích třídy by měly být uloženy tyto údaje: název, rok vydání, nakladatel, žánr, autor, cena.
 # Implementujte metody třídy pro vstup a výstup dat, zajistěte přístup k jednotlivým polím prostřednictvím metod třídy.
 
+# Vytvoření třídy book
 class book:
     def __init__(self, nazev, rok_vydani, nakladatelstvi, zanr, autor, cena):
         self.nazev = nazev
@@ -27,4 +28,7 @@ kniha_pad_domu_usheru = book(
     autor="Edgar Allan Poe",
     cena=500
 )
+# Zavolání funkce
 kniha_pad_domu_usheru.info_kniha()
+# Konec programu
+print('\nKonec programu')
