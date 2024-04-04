@@ -21,6 +21,7 @@ class car:
 
 moje_auto = car(model='Octavia 2 RS', rok='2013', vyrobce='Škoda', objem=2, barva='Bílá', cena=190000)
 moje_auto.info()
+print('Konec programu.')
 
 
 
