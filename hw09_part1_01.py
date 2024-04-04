@@ -20,8 +20,13 @@ class car:
         print(f'Cena: {self.cena}')
 
 moje_auto = car(model='Octavia 2 RS', rok='2013', vyrobce='Škoda', objem=2, barva='Bílá', cena=190000)
+vase_auto = car(model=input('Zadej model auta: '), rok=input('Zadej rok auta: '), vyrobce=input('Zadej výrobce auta: '),
+                objem=input('Zadej objem auta: '), barva=input('Zadej barvu auta: '), cena=input('Zadej cenu auta: '))
+print('\nMoje auto:')
 moje_auto.info()
-print('Konec programu.')
+print('\nZadané auto:')
+vase_auto.info()
+print('\nKonec programu.')
 
 
 
