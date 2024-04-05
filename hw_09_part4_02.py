@@ -12,9 +12,9 @@ class Ship:
         self.vykon = vykon
 
     def ziskej_info(self):
-        return f'Název lodi: {self.nazev}', f'Délka: {self.delka}', f'Počet motorů: {self.pocet_motoru}', f'Výkon: {self.vykon}'
+        return f'Název lodi: {self.nazev} \nDélka: {self.delka} \nPočet motorů: {self.pocet_motoru} \nVýkon: {self.vykon}'
 
-class Fregata:
+class Fregata(Ship):
     def __init__(self, nazev, delka, pocet_motoru, vykon, pocet_plachet):
         super().__init__(nazev, delka, pocet_motoru, vykon)
         self.pocet_plachet = pocet_plachet
@@ -22,7 +22,7 @@ class Fregata:
     def info_fregata(self):
         return f'Počet plachet je: {self.pocet_plachet}'
 
-class Torpedoborec:
+class Torpedoborec(Ship):
     def __init__(self, nazev, delka, pocet_motoru, vykon, munice):
         super().__init__(nazev, delka, pocet_motoru, vykon)
         self.munice = munice
@@ -30,7 +30,7 @@ class Torpedoborec:
     def info_torpedoborec(self):
         return f'Jako munice se používá: {self.munice}'
 
-class Kriznik:
+class Kriznik(Ship):
     def __init__(self, nazev, delka, pocet_motoru, vykon, dela):
         super().__init__(nazev, delka, pocet_motoru, vykon)
         self.dela = dela
@@ -39,6 +39,8 @@ class Kriznik:
         return f'Křižník má {self.dela} děl.'
 
 
-
-a = Ship('velika', 300, 7, '600W')
-a.ziskej_info()
+# Fregata
+lod_fregata = Fregata('velika', 300, 7, '600W',22)
+print('\n')
+print(lod_fregata.ziskej_info())
+print(lod_fregata.info_fregata())
