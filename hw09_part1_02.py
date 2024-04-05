@@ -3,7 +3,7 @@
 # Implementujte metody třídy pro vstup a výstup dat, zajistěte přístup k jednotlivým polím prostřednictvím metod třídy.
 
 # Vytvoření třídy book
-class book:
+class Book:
     def __init__(self, nazev, rok_vydani, nakladatelstvi, zanr, autor, cena):
         self.nazev = nazev
         self.rok_vydani = rok_vydani
@@ -20,7 +20,7 @@ class book:
         print(f'Autor: {self.autor}')
         print(f'Cena: {self.cena}')
 
-kniha_pad_domu_usheru = book(
+kniha_pad_domu_usheru = Book(
     nazev="Pád domu Usherů a jiné povídky",
     rok_vydani=2024,
     nakladatelstvi="Fobos",
