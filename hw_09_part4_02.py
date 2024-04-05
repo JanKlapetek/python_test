@@ -40,7 +40,15 @@ class Kriznik(Ship):
 
 
 # Fregata
-lod_fregata = Fregata('velika', 300, 7, '600W',22)
+lod_fregata = Fregata('velika', 300, 7, 0,22)
 print('\n')
 print(lod_fregata.ziskej_info())
 print(lod_fregata.info_fregata())
+
+# Torpedoborec
+lod_torpedoborec = Torpedoborec('HMS Havock', 150, 20, '1800MW', 'Rakety C8998')
+print('\n')
+print(lod_torpedoborec.ziskej_info())
+print(lod_torpedoborec.info_torpedoborec())
+
+
