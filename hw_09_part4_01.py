@@ -25,4 +25,27 @@ class Blender(Device):
 
     def udelej_mix(self):
         return f'Příprava smoothie na rychlost: {self.rychlost}'
+class Meat_grinder(Device):
+    def __init__(self, znacka, model, vykon):
+        super().__init__(znacka, model)
+        self.vykon = vykon
+
+    def namel_maso(self):
+        return f'Mletí masa o výkonu: {self.vykon}'
+print('\n')
+# Kávovar
+coffee_machine = Coffee_machine('Delonghi', 'Ecam290', 'mletá káva, zrna' )
+print(coffee_machine.ziskej_info())
+print(coffee_machine.udelat_kavu())
+print('\n')
+# Mixér
+blender_machine = Blender('Tefal', 'BL435', '5')
+print(blender_machine.ziskej_info())
+print(blender_machine.udelej_mix())
+print('\n')
+# Mlýnek na maso
+meat_machine = Meat_grinder('Tefal', 'NE105', '1400W')
+print(meat_machine.ziskej_info())
+print(meat_machine.namel_maso())
+print('\n')
 
