@@ -51,4 +51,8 @@ print('\n')
 print(lod_torpedoborec.ziskej_info())
 print(lod_torpedoborec.info_torpedoborec())
 
-
+# Křižník
+lod_kriznik = Kriznik('Slezská Orlice', 231, 1, 999, 40)
+print('\n')
+print(lod_kriznik.ziskej_info())
+print(lod_kriznik.info_kriznik())
