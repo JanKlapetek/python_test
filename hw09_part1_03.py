@@ -2,7 +2,7 @@
 # Implementujte třídu Stadion. Do polí třídy se ukládají následující údaje: název stadionu, datum otevření, země, město, počet míst k sezení.
 # Implementujte metody třídy pro vstup a výstup dat, zajistěte přístup k jednotlivým polím prostřednictvím metod třídy.
 
-class stadion:
+class Stadion:
     def __init__(self, nazev_stadionu, datum_otevreni, zeme, mesto, pocet_mist):
         self.nazev_stadionu = nazev_stadionu
         self.datum_otevreni = datum_otevreni
@@ -17,7 +17,7 @@ class stadion:
         print(f'Město: {self.mesto}')
         print(f'Počet míst: {self.pocet_mist}')
 
-pridej_stadion = stadion(
+pridej_stadion = Stadion(
     nazev_stadionu='Old Trafford',
     datum_otevreni='19.02.1910',
     zeme='Velká Británie',
