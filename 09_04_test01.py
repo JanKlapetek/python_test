@@ -4,12 +4,11 @@ class Book:
         self.author = author
         self.pages = pages
 
-    def show_info(self):
-        print('Title: {}'.format(self.title))
-        print('Author: {}'.format(self.author))
-        print('Pages: {}'.format(self.pages))
+    def __str__(self):
+        return (f'Title: {self.title} \nAuthor: {self.author}, \nPages: {self.pages}')
 
 book1 = Book('Python crash Course', 'Monty Python', 800)
 book2 = Book('JavaScript for begginers', 'Steve Jobs', 820)
 print(book1)
+print(book1+book2)
 
