@@ -8,18 +8,20 @@ class Vehicle:
         print(f'Váha: {self.vaha}')
 
 class Kamion(Vehicle):
-    def __init__(self,rychlost,vaha, checkSpeedLimitObec, checkSpeedLimit_dalnice):
+    def __init__(self,rychlost,vaha, zatizeni):
         super().__init__(rychlost,vaha)
-        self.CheckSpeedLimitObec = checkSpeedLimitObec
-        self.CheckSpeedLimitDalnice = checkSpeedLimit_dalnice
-
-    def jedes_rychle(self,rychlost):
-        if rychlost > 50:
-            print(f'Jedeš rychleji než je povoleno v obci! Tvá rychlost je: {self.rychlost}')
-
-auto1 = Vehicle(100,800)
-kamion1 = Vehicle(110, 1000)
+        self.zatizeni = zatizeni
 
 
+    def limit_dalnice(self):
+        if self.rychlost > 100:
+            return 'Pokuta!'
+        elif self.rychlost < 80:
+            return 'Pokuta, jedeš pomalu!'
+        else:
+            return 'Není pokuta!'
+
+kamion = Kamion(150, 2000, 500)
+print(kamion.limit_dalnice())
 
 
