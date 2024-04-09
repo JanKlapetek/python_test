@@ -9,7 +9,7 @@ class Vehicle:
 
 class Kamion(Vehicle):
     def __init__(self,rychlost,vaha, zatizeni):
-        super().__init__(rychlost,vaha)
+        super().__init__(rychlost, vaha)
         self.zatizeni = zatizeni
 
 
