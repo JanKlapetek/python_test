@@ -11,5 +11,5 @@ class Book:
 
 book1 = Book('Python crash Course', 'Monty Python', 800)
 book2 = Book('JavaScript for begginers', 'Steve Jobs', 820)
-print(book1+book2)
+print(book1)
 
