@@ -25,6 +25,23 @@ class Ctverec(Tvar):
         print(f'Souřadnice levého horního rohu: ({self.x}, {self.y})')
         print(f'Délka strany: {self.delka_strany}')
 
+class Obdelnik(Tvar):
+    def __init__(self, nazev, x, y, sirka, vyska):
+        super().__init__(nazev)
+        self.x = x
+        self.y = y
+        self.sirka = sirka
+        self.vyska = vyska
+
+    def zobraz(self):
+        super().zobraz()
+        print(f'Souřadnice levého horního rohu: {self.x}, {self.y}')
+        print(f'Šířka: {self.sirka}, Výška: {self.vyska}')
+
+
+
+
+
 
 
 
