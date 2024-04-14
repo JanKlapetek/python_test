@@ -8,5 +8,10 @@ class Tvar:
         with open(soubor, 'wb') as f:
             pickle.dump(self,f)
 
+    @staticmethod
+    def nacti(soubor):
+        with open(soubor, 'rb') as f:
+            return pickle.load(f)
+
 
 
