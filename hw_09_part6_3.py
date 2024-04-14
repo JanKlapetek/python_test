@@ -83,3 +83,5 @@ for i in range(len(tvary)):
 # Zobrazení informací o načtených tvarech
 for nacteny_tvar in nactene_tvary:
     nacteny_tvar.zobraz()
+
+print('\nKonec programu.')
