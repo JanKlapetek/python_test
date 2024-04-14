@@ -1,5 +1,4 @@
 import pickle
-
 class Tvar:
     def __init__(self, nazev):
         self.nazev = nazev
@@ -64,10 +63,10 @@ class Elipsa(Tvar):
         print(f'{self.nazev}: Horní levý roh opsaného obdélníku ({self.x}, {self.y}), Šířka: {self.sirka}, Výška: {self.vyska}')
 
 # Příklad použití
-ctverec = Ctverec('Čtverec', 0, 0, 5)
+ctverec = Ctverec('Čtverec', 0, 0, 8)
 obdelnik = Obdelnik('Obdélník', 2, 3, 8, 6)
 kruznice = Kruznice('Kružnice', 10, 10, 4)
-elipsa = Elipsa('Elipsa', 5, 5, 12, 8)
+elipsa = Elipsa('Elipsa', 5, 5, 12, 7)
 
 tvary = [ctverec, obdelnik, kruznice, elipsa]
 
