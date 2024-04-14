@@ -38,6 +38,18 @@ class Obdelnik(Tvar):
         print(f'Souřadnice levého horního rohu: {self.x}, {self.y}')
         print(f'Šířka: {self.sirka}, Výška: {self.vyska}')
 
+class Kruh(Tvar):
+    def __init__(self, nazev, stred_x, stred_y, polomer):
+        super().__init__(nazev)
+        self.stred_x = stred_x
+        self.stred_y = stred_y
+        self.polomer = polomer
+
+    def zobraz(self):
+        super().zobraz()
+        print(f'Souřadnice středu: ({self.stred_x}, {self.stred_y})')
+        print(f'Poloměr: {self.polomer}')
+
 
 
 
