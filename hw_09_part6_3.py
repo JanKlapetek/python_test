@@ -64,8 +64,13 @@ class Elipsa(Tvar):
         print(f'Šířka opsaného obdelníku: {self.sirka}')
         print(f'Výška opsaného obdelníku: {self.vyska}')
 
-
-
+# Vytvoření seznamu všech tvarů
+tvary = [
+    Ctverec('Čtverec', 0, 0, 5),
+    Obdelnik('Obdélník', 0, 0, 8, 6),
+    Kruh('Kruh', 0, 0, 5),
+    Elipsa('Elipsa', 0, 0, 10, 7)
+]
 
 
 
