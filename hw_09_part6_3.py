@@ -50,6 +50,20 @@ class Kruh(Tvar):
         print(f'Souřadnice středu: ({self.stred_x}, {self.stred_y})')
         print(f'Poloměr: {self.polomer}')
 
+class Elipsa(Tvar):
+    def __init__(self, nazev, x, y, sirka, vyska):
+        super().__init__(nazev)
+        self.x = x
+        self.y = y
+        self.sirka = sirka
+        self.vyska = vyska
+
+    def zobraz(self):
+        super().zobraz()
+        print(f'Souřadnice levého horního rohu opsaného obdelníku: ({self.x}, {self.y})')
+        print(f'Šířka opsaného obdelníku: {self.sirka}')
+        print(f'Výška opsaného obdelníku: {self.vyska}')
+
 
 
 
