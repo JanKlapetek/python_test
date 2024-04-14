@@ -71,7 +71,18 @@ tvary = [
     Kruh('Kruh', 0, 0, 5),
     Elipsa('Elipsa', 0, 0, 10, 7)
 ]
+# Uložení tvarů do souboru
+nazev_souboru = 'tvary_data.pkl'
+for tvar in tvary:
+    tvar.uloz(nazev_souboru)
 
+# Načtení tvarů ze souboru
+nactene_tvary = [Tvar.nacti(nazev_souboru) for _ in range(len(tvary))]
+
+# Zobrazení informací o každém tvaru
+for tvar in nactene_tvary:
+    tvar.zobraz()
+    print()
 
 
 
