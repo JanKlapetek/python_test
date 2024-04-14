@@ -10,10 +10,10 @@ class Letadlo:
     def __init__(self, typ, max_cestujicich):
         self.typ = typ
         self.max_cestujicich = max_cestujicich
-        self.aktualni_cestujici = 0
+        self.aktualni_cestujici = 100
 
     def __eq__(self, other):
-        return self.typ == other.typ
+        return self.max_cestujicich == other.max_cestujicich
 
     def __add__(self, cestujici):
         self.aktualni_cestujici += cestujici
@@ -43,8 +43,8 @@ class Letadlo:
     def __ge__(self, other):
         return self.max_cestujicich >= other.max_cestujicich
 
-letadlo1 = Letadlo(typ=input('Zadej název letadla 1: '), max_cestujicich=input('Zadej max cestujících: '))
-letadlo2 = Letadlo(typ=input('Zadej název letadla 2: '), max_cestujicich=input('Zadej max cestujících: '))
+letadlo1 = Letadlo(typ=input('Zadej název letadla 1: '), max_cestujicich=int(input('Zadej max cestujících: ')))
+letadlo2 = Letadlo(typ=input('Zadej název letadla 2: '), max_cestujicich=int(input('Zadej max cestujících: ')))
 
 
 print(f"Typ letadla 1: {letadlo1.typ}")
