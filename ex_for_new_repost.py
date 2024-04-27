@@ -63,4 +63,3 @@ def vypis_seznam(seznam):
 
 if __name__ == "__main__":
     main()
-
